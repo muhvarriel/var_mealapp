@@ -6,7 +6,7 @@ class GetFood {
   static Future<List<Food>> getFoods() async {
     try {
       final response = await http
-          .get("https://www.themealdb.com/api/json/v1/1/search.php?f=b");
+          .get("https://www.themealdb.com/api/json/v1/1/search.php?f=c");
       if (response.statusCode == 200) {
         List<Food> list = parseFoods(response.body);
         return list;

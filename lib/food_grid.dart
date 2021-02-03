@@ -28,6 +28,7 @@ class FoodGrid extends StatelessWidget {
           alignment: Alignment(0, 0.8),
           child: Text(
             (food != null) ? food.strMeal : "Tidak ada data",
+            overflow: TextOverflow.ellipsis,
             style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           ),
         )
